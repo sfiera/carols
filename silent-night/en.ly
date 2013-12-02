@@ -5,7 +5,7 @@
 
 \header {
   title = "Silent Night"
-  composer = "Traditional"
+  composer = "Franz Xaver Gruber"
   tagline = ""
 }
 
