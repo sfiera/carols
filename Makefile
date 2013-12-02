@@ -1,9 +1,19 @@
 LILYPOND=lilypond
 
-all: out/o-christmas-tree.en-jp.pdf \
+all: out/deck-the-halls.en-jp.pdf \
+	 out/deck-the-halls.en.pdf \
+	 out/o-christmas-tree.en-jp.pdf \
 	 out/o-christmas-tree.en.pdf \
 	 out/we-wish-you.en-jp.pdf \
 	 out/we-wish-you.en.pdf
+
+out/deck-the-halls.en-jp.pdf: deck-the-halls/en-jp.ly deck-the-halls/parts.ly
+	mkdir -p out
+	$(LILYPOND) -o out/deck-the-halls.en-jp $<
+
+out/deck-the-halls.en.pdf: deck-the-halls/en.ly deck-the-halls/parts.ly
+	mkdir -p out
+	$(LILYPOND) -o out/deck-the-halls.en $<
 
 out/o-christmas-tree.en-jp.pdf: o-christmas-tree/en-jp.ly o-christmas-tree/parts.ly
 	mkdir -p out
