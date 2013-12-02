@@ -7,7 +7,9 @@ all: out/deck-the-halls.en-jp.pdf \
 	 out/silent-night.en-jp.pdf \
 	 out/silent-night.en.pdf \
 	 out/we-wish-you.en-jp.pdf \
-	 out/we-wish-you.en.pdf
+	 out/we-wish-you.en.pdf \
+	 out/white-christmas.en-jp.pdf \
+	 out/white-christmas.en.pdf
 
 out/deck-the-halls.en-jp.pdf: deck-the-halls/en-jp.ly deck-the-halls/parts.ly
 	mkdir -p out
@@ -40,3 +42,11 @@ out/we-wish-you.en-jp.pdf: we-wish-you/en-jp.ly we-wish-you/parts.ly
 out/we-wish-you.en.pdf: we-wish-you/en.ly we-wish-you/parts.ly
 	mkdir -p out
 	$(LILYPOND) -o out/we-wish-you.en $<
+
+out/white-christmas.en-jp.pdf: white-christmas/en-jp.ly white-christmas/parts.ly
+	mkdir -p out
+	$(LILYPOND) -o out/white-christmas.en-jp $<
+
+out/white-christmas.en.pdf: white-christmas/en.ly white-christmas/parts.ly
+	mkdir -p out
+	$(LILYPOND) -o out/white-christmas.en $<
