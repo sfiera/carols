@@ -1,6 +1,6 @@
 Notes = \transpose c c' {
     \key c \major
-    \time 4/4
+    \time 2/2
 
     e1        | f4 e ees e  | f1   | fis4 g2.  |
     r4 a b c' | d' c' b a   | g1(  | g2) c4 d  |
