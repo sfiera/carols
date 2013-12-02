@@ -4,6 +4,8 @@ all: out/deck-the-halls.en-jp.pdf \
 	 out/deck-the-halls.en.pdf \
 	 out/o-christmas-tree.en-jp.pdf \
 	 out/o-christmas-tree.en.pdf \
+	 out/silent-night.en-jp.pdf \
+	 out/silent-night.en.pdf \
 	 out/we-wish-you.en-jp.pdf \
 	 out/we-wish-you.en.pdf
 
@@ -22,6 +24,14 @@ out/o-christmas-tree.en-jp.pdf: o-christmas-tree/en-jp.ly o-christmas-tree/parts
 out/o-christmas-tree.en.pdf: o-christmas-tree/en.ly o-christmas-tree/parts.ly
 	mkdir -p out
 	$(LILYPOND) -o out/o-christmas-tree.en $<
+
+out/silent-night.en-jp.pdf: silent-night/en-jp.ly silent-night/parts.ly
+	mkdir -p out
+	$(LILYPOND) -o out/silent-night.en-jp $<
+
+out/silent-night.en.pdf: silent-night/en.ly silent-night/parts.ly
+	mkdir -p out
+	$(LILYPOND) -o out/silent-night.en $<
 
 out/we-wish-you.en-jp.pdf: we-wish-you/en-jp.ly we-wish-you/parts.ly
 	mkdir -p out
