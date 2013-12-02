@@ -1,4 +1,4 @@
-LILYPOND=lilypond
+LILYPOND=lilypond -dno-point-and-click
 
 all: out/deck-the-halls.en-jp.pdf \
 	 out/deck-the-halls.en.pdf \
@@ -10,6 +10,9 @@ all: out/deck-the-halls.en-jp.pdf \
 	 out/we-wish-you.en.pdf \
 	 out/white-christmas.en-jp.pdf \
 	 out/white-christmas.en.pdf
+
+clean:
+	rm -rf out/*
 
 out/deck-the-halls.en-jp.pdf: deck-the-halls/en-jp.ly deck-the-halls/parts.ly
 	mkdir -p out
