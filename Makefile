@@ -1,6 +1,8 @@
 LILYPOND=lilypond -dno-point-and-click
 
-all: out/deck-the-halls.en-jp.pdf \
+all: out/auld-lang-syne.en-jp.pdf \
+	 out/auld-lang-syne.en.pdf \
+     out/deck-the-halls.en-jp.pdf \
 	 out/deck-the-halls.en.pdf \
 	 out/o-christmas-tree.en-jp.pdf \
 	 out/o-christmas-tree.en.pdf \
@@ -13,6 +15,14 @@ all: out/deck-the-halls.en-jp.pdf \
 
 clean:
 	rm -rf out/*
+
+out/auld-lang-syne.en-jp.pdf: auld-lang-syne/en-jp.ly auld-lang-syne/parts.ly
+	mkdir -p out
+	$(LILYPOND) -o out/auld-lang-syne.en-jp $<
+
+out/auld-lang-syne.en.pdf: auld-lang-syne/en.ly auld-lang-syne/parts.ly
+	mkdir -p out
+	$(LILYPOND) -o out/auld-lang-syne.en $<
 
 out/deck-the-halls.en-jp.pdf: deck-the-halls/en-jp.ly deck-the-halls/parts.ly
 	mkdir -p out
