@@ -5,7 +5,7 @@ Notes = \transpose c c' {
 
     c4     | f4. f8 f4 a       | g4. f8 g4  \bar "" \break
     a4     | f4. f8 a4 c'      | d'2.       \bar "" \break
-    d'4    | c4. a8 a4 f       | g4. f8 g4  \bar "" \break
+    d'4    | c'4. a8 a4 f      | g4. f8 g4  \bar "" \break
     a4     | f4. d8 d4 c       | f2.        \bar "" \break
     d'4    | c'4.( a8) a4( f)  | g4. f8 g4  \bar "" \break
     d'4    | c'4.( a8) a4( c') | d'2.       \bar "" \break
