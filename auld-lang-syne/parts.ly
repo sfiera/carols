@@ -17,10 +17,10 @@ English = \lyricmode {
     and ne -- ver brought to mind?
     Should auld ac -- quaint -- ance be for -- got,
     and days of auld lang syne?
-    For auld lang syne, my dear,
-    for auld lang syne,
+    For auld __ lang __ syne, my dear,
+    for auld __ lang __ syne,
     We'll take a cup of kind -- ness yet,
-    For auld lang syne.
+    For __ auld __ lang __ syne.
 }
 Katakana = \lyricmode {
     ｼｭｯﾄﾞ ｵｰﾙﾄﾞ ｱｯ ｸｪｲﾝ ﾀﾝｽ ﾋﾞ ﾌｫ ｺﾞｯﾄ
